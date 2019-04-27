@@ -15,7 +15,7 @@ client.on("ready", async () => {
     console.log(`Logged in as ${client.user.tag}!`);
 
     setInterval(function() {
-        client.user.setPresence({ game: { name: "c!help | " + client.guilds.size + " Servers! | https://discord.gg/QYGMzmN", url: "https://discord.gg/QYGMzmN", type: 1 } });
+        client.user.setPresence({ game: { name: "c!help | " + client.guilds.size + " Servers! | https://discord.gg/FuMHW7K", url: "https://discord.gg/FuMHW7K", type: 1 } });
     //Update every 30 seconds
     }, 30 * 1000);
 
@@ -106,7 +106,7 @@ client.on("message", async message =>{
         "**`c!createInvite`** - Creates invites for servers!")
 
         .addField(":thinking: Suggestions", 
-        "Please suggest more commands for this bot, also you can join the offical discord! https://discord.gg/QYGMzmN")
+        "Please suggest more commands for this bot, also you can join the offical discord! https://discord.gg/FuMHW7K")
         message.channel.send({embed});
 
     }
@@ -227,7 +227,7 @@ client.on("message", async message =>{
         .setAuthor("Rainbow", client.user.avatarURL)
         .setColor(0x4CAF50)
         .setDescription("Successfully applied rainbow colors to **`" + args.join(" ") + "`**" + "\n" +
-        "Note: this only lasts 72 hours, then it will stop. You can still apply it whenever you'd like!")
+        "Note: might need to reapply")
         message.channel.send({embed});
 
         client.colors[message.guild.name] = {
